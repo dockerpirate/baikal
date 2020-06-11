@@ -1,8 +1,7 @@
 FROM alpine:3.12
 MAINTAINER nobody
 
-ENV VERSION  0.6.1
-ENV CHECKSUM 533e46ffcafda24e91aabbbc5873b7d1153d538dde599927f77e1595793ddb3e
+ENV VERSION  0.7.0
 
 ADD baikal.sh /usr/local/bin/baikal
 
