@@ -16,10 +16,10 @@ docker buildx build \
     --push \
     . \
 echo $DOCKER_PASSWORD | docker login -u dockerpirate --password-stdin &> /dev/null
-TAG="${GIT_TAG}"
+TAG2="${GIT_TAG}"
 docker buildx build \
      --progress plain \
     --platform=linux/arm64,linux/arm/v7,linux/arm/v6 \
-    -t $DOCKER_REPO:$TAG \
+    -t $DOCKER_REPO:$TAG2 \
     --push \
     .    
