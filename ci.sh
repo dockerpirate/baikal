@@ -7,8 +7,9 @@ if [ "$TRAVIS_PULL_REQUEST" = "true" ] || [ "$TRAVIS_BRANCH" != "master" ]; then
     .
   exit $?
 fi
+SHA="$(shell git rev-parse --short HEAD)"
 echo $DOCKER_PASSWORD | docker login -u dockerpirate --password-stdin &> /dev/null
-TAG="${TRAVIS_BRANCH}"
+TAG="${SHA}"
 docker buildx build \
      --progress plain \
     --platform=linux/arm64,linux/arm/v7,linux/arm/v6 \
