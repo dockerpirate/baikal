@@ -16,7 +16,7 @@ docker buildx build \
     --push \
     . \
 echo $DOCKER_PASSWORD | docker login -u dockerpirate --password-stdin &> /dev/null
-TAG="${TRAVIS_TAG}:${GIT_TAG}"
+TAG="${GIT_TAG}"
 docker buildx build \
      --progress plain \
     --platform=linux/arm64,linux/arm/v7,linux/arm/v6 \
