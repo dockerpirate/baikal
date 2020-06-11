@@ -12,7 +12,7 @@ docker run \
     dockerpirate/baikal
 ```
 
-Setup Baikal using [admin](http://localhost/admin).
+Setup Baikal using http://localhost/admin
 
 ### License
 
