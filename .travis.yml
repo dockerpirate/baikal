@@ -4,7 +4,7 @@ env:
   global:
     - DOCKER_REPO=dockerpirate/docker-baikal 
 before_deploy:
-  - export GIT_TAG=$TRAVIS_TAG
+  - export GIT_TAG=$TRAVIS_BRANCH
 before_install:
   - curl -fsSL https://get.docker.com | sh
   - echo '{"experimental":"enabled"}' | sudo tee /etc/docker/daemon.json
