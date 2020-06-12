@@ -3,7 +3,7 @@ MAINTAINER nobody
 
 ENV VERSION  0.7.0
 
-ADD baikal.sh /usr/local/bin/baikal
+COPY baikal.sh /usr/local/bin/baikal
 
 RUN apk update && \ 
 apk --no-cache add unzip openssl lighttpd php7-cgi php7-ctype php7-dom php7-pdo_sqlite php7-pdo_mysql php7-xml \
