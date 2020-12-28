@@ -18,6 +18,7 @@ apk del -rf --purge openssl unzip
 COPY lighttpd.conf /etc/lighttpd/lighttpd.conf
 
 VOLUME /baikal/Specific
+VOLUME /baikal/config
 
 EXPOSE 80
 
