@@ -1,4 +1,4 @@
-FROM php:7.4-cli-alpine3.12
+FROM alpine:3.12
 MAINTAINER nobody
 
 ENV VERSION  0.7.2
