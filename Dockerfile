@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM 7.4-fpm-alpine3.12
 MAINTAINER nobody
 
 ENV VERSION  0.7.2
