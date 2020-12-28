@@ -1,7 +1,7 @@
 FROM alpine:3.12
 MAINTAINER nobody
 
-ENV VERSION  0.7.0
+ENV VERSION  0.7.2
 
 COPY baikal.sh /usr/local/bin/baikal
 
