@@ -7,7 +7,7 @@ COPY baikal.sh /usr/local/bin/baikal
 
 RUN apk update && \ 
 apk --no-cache add unzip openssl lighttpd php7-cgi php7-ctype php7-dom php7-pdo_sqlite php7-pdo_mysql php7-xml \
-php7-openssl php7-json php7-xmlreader php7-xmlwriter php7-session php7-mbstring php7-iconv php7-simplexml curl && \
+php7-openssl php7-json php7-xmlreader php7-xmlwriter php7-session php7-mbstring php7-iconv php7-simplexml php7-curl && \
 wget https://github.com/sabre-io/Baikal/releases/download/$VERSION/baikal-$VERSION.zip && \
 unzip baikal*.zip && \
 rm baikal*.zip && \
