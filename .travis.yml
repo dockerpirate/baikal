@@ -3,6 +3,9 @@ sudo: required
 env:
   global:
     - DOCKER_REPO=dockerpirate/docker-baikal 
+    - ALPINE_M=3
+    - ALPINE_P=13
+    - BAIKAL_M=0.8.0 
 before_deploy:
   - export GIT_TAG=$TRAVIS_BRANCH
 before_install:
